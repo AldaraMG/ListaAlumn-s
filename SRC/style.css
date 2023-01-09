@@ -73,8 +73,6 @@ form {
     text-align: center;
     width: 350px;
     height: 350px;
-
-
     flex-direction: column;
 }
 
@@ -101,8 +99,6 @@ form#formulario input {
     width: 90px;
     background-color: rgb(241, 159, 97);
     margin-top: 15px;
-
-
 }
 
 .botones {
@@ -145,8 +141,7 @@ table.lista {
     background: linear-gradient(55deg, rgb(156, 186, 176) 20%, rgb(187, 234, 203) 40%, rgb(239, 209, 174) 70%);
     margin-top: 68px;
     margin-right: 30px;
-    border-spacing: 4px;
-    
+    border-spacing: 4px;   
 
 }
 
@@ -233,7 +228,6 @@ table .btn-eliminar {
         background: linear-gradient(55deg, rgb(156, 186, 176) 20%, rgb(187, 234, 203) 40%, rgb(239, 209, 174) 70%);
         margin: 30px;
       
-
     }
 
     h1 {

@@ -1,12 +1,12 @@
-let ListaAlumnos = [];//arreglo vacio
+let ListaAlumnos = [];
 const objAlumnos = {
     id:'',
     nombre:'',
     curso:'',
     refuerzo:'',
-}//objeto y sus atributos
+}
 
-let editando = false;//detectar cuando tiene que agregar y cuando tiene que actualizar.
+let editando = false;
 const formulario = document.querySelector('#formulario');
 const nombreImput = document.querySelector('#nombre');
 const cursoImput= document.querySelector('#curso');
@@ -14,11 +14,10 @@ const refuerzoImput = document.querySelector('#refuerzo');
 const btnAgregar = document.querySelector('#btnAgregar');
 
 
-formulario.addEventListener('submit',validarFormulario);//cuando detecte el submit va a llamar a esta funcion, la de validar, y si está vacia saltará alert.
+formulario.addEventListener('submit',validarFormulario);
 
 function validarFormulario(e) {
-    e.preventDefault();//para que no se ejecute de forma automatica
-
+    e.preventDefault();
     if (nombreImput.value === ''|| cursoImput.value ===''|| refuerzoImput.value ===''){
         alert ('Todos los campos son obligatorios.');
         return;
@@ -29,10 +28,10 @@ function validarFormulario(e) {
         editarAlumno();
         editando = false;
     }   else {
-        objAlumnos.id = Date.now ();//nunca va a repetirse
+        objAlumnos.id = Date.now ();
         objAlumnos.nombre = nombreImput.value;
         objAlumnos.curso = cursoImput.value;
-        objAlumnos.refuerzo = refuerzoImput.value;//iniciamos el objeto con los datos de los input.
+        objAlumnos.refuerzo = refuerzoImput.value;
 
         agregarAlumno();
 
@@ -40,10 +39,10 @@ function validarFormulario(e) {
 }
 
     function agregarAlumno() {
-        ListaAlumnos.push({...objAlumnos});//agregue el objeto
+        ListaAlumnos.push({...objAlumnos});
        mostrarAlumno ();
-        formulario.reset();//nos limpia los imputs
-        limpiarObjeto();//limpia el objeto
+        formulario.reset();
+        limpiarObjeto();
    
 }
 
@@ -160,7 +159,7 @@ function mostrarAlumno() {
 
 
 function  cargarAlumno(alumno){
-    const {id, nombre, curso,refuerzo} = alumno;//la función va a recibir todos los datos de alumno
+    const {id, nombre, curso,refuerzo} = alumno;
 
     nombreImput.value = nombre;
     cursoImput.value = curso;
@@ -176,7 +175,7 @@ function  cargarAlumno(alumno){
 function editarAlumno(){
     objAlumnos.nombre = nombreImput.value;
     objAlumnos.curso = cursoImput.value;
-    objAlumnos.refuerzo = refuerzoImput.value;//relaciona el objeto con los inputs.El id no se pasa porque ya sale cuando cargamos empleado.
+    objAlumnos.refuerzo = refuerzoImput.value;
 
     ListaAlumnos.map ( alumno => {
           if ( alumno.id === objAlumnos.id) {
@@ -185,7 +184,7 @@ function editarAlumno(){
                alumno.curso = objAlumnos.curso;
                alumno.refuerzo = objAlumnos.refuerzo;
 
-          }//reemplaza esta información.En vez de usar un bucle for utilizamos map.Transforma cada elemento de un arreglo(coleccion ordenada de datos)
+          }
     });
 
     limpiarHTML();
@@ -197,15 +196,15 @@ function editarAlumno(){
 }
 
 function eliminarAlumno(id){
-    ListaAlumnos = ListaAlumnos.filter(alumno => alumno.id !== id);//nos filtra los elementos que no sean iguales a la id.El resultado lo guarda en el arreglo listaAumnos.
+    ListaAlumnos = ListaAlumnos.filter(alumno => alumno.id !== id);
     limpiarHTML();
    mostrarAlumno();
 }
 
 function limpiarHTML(){
-    const divAlumnos = document.querySelector('.div-alumnos');//para tener acceso a los elementos hijos de este contenedor
+    const divAlumnos = document.querySelector('.div-alumnos');
     while (divAlumnos.firstChild) {
         divAlumnos.removeChild(divAlumnos.firstChild);
     }
-}//mientras este div tenga hijos los va a ir eliminando de uno a uno
+}
 
