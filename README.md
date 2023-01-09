@@ -14,4 +14,5 @@ Los usuarios, en este caso el profesorado, puede utilizar esta aplicación para 
 -La ID nunca se va a repetir gracias al date.now.
 
 **Testeo en jest**
-Testeo de una función del proyecto en sí no se incluye pero si están añadidos los archivos y se ha probado con una función externa para prácticar el testeo de la misma.
+No se incluye testeo de una función del proyecto en sí  pero si ha querido dejar los archivos ya que se ha probado con una función externa (cambiando sus datos) para prácticar el testeo de la misma.
+

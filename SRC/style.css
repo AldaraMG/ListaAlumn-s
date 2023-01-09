@@ -135,7 +135,7 @@ form#formulario input {
 
 }
 
-table.lista {
+table {
     text-align: center;
     width: 90%;
     background: linear-gradient(55deg, rgb(156, 186, 176) 20%, rgb(187, 234, 203) 40%, rgb(239, 209, 174) 70%);
@@ -190,7 +190,7 @@ table .btn-eliminar {
     margin-top: 10px;
 }
 
-@media screen and (max-width:415px) {
+@media screen and (max-width:844px) {
 
     body {
 
@@ -221,24 +221,17 @@ table .btn-eliminar {
     form {
         margin-left: 80px;
     }
-
-    table.lista {
-        width: 40px;
-        height: 90px;
-        background: linear-gradient(55deg, rgb(156, 186, 176) 20%, rgb(187, 234, 203) 40%, rgb(239, 209, 174) 70%);
-        margin: 30px;
-      
-    }
-
+    
     h1 {
         margin-right: 20px;
 
     }
 
     .div-alumnos {
-        width: 60%;
-        height: 80%;
+        width: 45%;
+        height: 30%;
         align-items: center;
+       
     }
 
     #btn-C {
