@@ -1,18 +1,23 @@
 {
-  "name": "testing-example",
+  "name": "listaalumn-s",
   "version": "1.0.0",
-  "description": "",
+  "description": "**Descripción**:\r En este proyecto vamos a encontrar un formulario para ingresar ciertos datos de los alumnos. En este caso, el nombre, el curso y las materias en las que obtienen menos calificación. Estos datos se insertarán en una tabla para ser analizados.\r Los usuarios, en este caso el profesorado, puede utilizar esta aplicación para ver cuales son las materias que necesitan ser revisadas pedagógicamente. Así pueden mejorar como transmitir el conocimiento de ciertas materias para aumentar esas calificaciones.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AldaraMG/ListaAlumn-s.git"
+  },
+  "author": "Aldara Mar",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AldaraMG/ListaAlumn-s/issues"
+  },
+  "homepage": "https://github.com/AldaraMG/ListaAlumn-s#readme",
   "devDependencies": {
-    "@babel/core": "^7.20.5",
-    "@babel/preset-env": "^7.20.2",
-    "babel-jest": "^29.3.1",
-    "jest": "^29.3.1"
+    "axios": "^1.2.3",
+    "json-server": "^0.17.1"
   }
 }

@@ -1,0 +1,23 @@
+{
+  "Alumnxs": [
+    {
+      "id": 1,
+      "nombre": "Aldara",
+      "curso": "4",
+      "refuerzo": "Inglés"
+    },
+    {
+      "id": 2,
+      "nombre": "Alicia",
+      "curso": "1",
+      "refuerzo": "Matemáticas"
+    },
+    {
+      "id": 3,
+      "nombre": "Alma",
+      "curso": "2",
+      "refuerzo": "Lengua"
+    }
+    
+  ]
+}

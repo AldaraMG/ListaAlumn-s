@@ -209,3 +209,8 @@ function limpiarHTML(){
     }
 }//mientras este div tenga hijos los va a ir eliminando de uno a uno
 
+
+
+
+
+
